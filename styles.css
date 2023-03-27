@@ -1,0 +1,131 @@
+:root {
+    --background-color: #E5E5E5;
+    --font-family: 'Roboto';
+    --font-style: normal;
+    --font-weight: 500;
+    --text-color: #666666;
+    --title-color: #000000;
+    --margin-horizontal: 32px;
+    --language-padding: 4px 8px 3px 8px;
+}
+  
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
+    color: var(--text-color);
+}
+  
+p {
+    font-size: 14px;
+    margin-left: var(--margin-horizontal);
+    line-height: 16.41px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    height: 25px;
+}
+  
+.titleContainer {
+    width: 635px;
+    height: 53px;
+    margin-bottom: 34px;
+}
+  
+h1 {
+    font-size: 48px;
+    line-height: 56.25px;
+    color: var(--title-color);
+}
+  
+.projectInformationContainer {
+    margin: 0;
+}
+
+.projectLanguageContainer {
+    display: flex;
+    align-content: flex-start;
+}
+  
+.sectionHeader {
+    height: 25px;
+    font-size: 18px;
+    line-height: 21.09px;
+    color: var(--title-color);
+    font-weight: bold;
+}
+  
+.language {
+    color: #FFFFFF;
+    text-align: center;
+    width: fit-content;
+    padding: var(--language-padding);
+    margin-left: var(--margin-horizontal);
+    margin-right: -25px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    height: unset;
+}
+  
+.javascript {
+    background-color: #f368e0;
+}
+  
+.typescript {
+    background-color: #ff9f43;
+}
+  
+.python {
+    background-color: #ee5253;
+}
+  
+.go {
+    background-color: #0abde3;
+}
+  
+.bash {
+    background-color: #10ac84;
+}
+  
+.card {
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    background: #FFFFFF;
+    min-height: 462px;
+    height: auto;
+    width: 320px;
+}
+  
+.projectName {
+    margin-top: 10px;
+    line-height: 16px;
+}
+  
+.userImage {
+    margin: 39px 95px;
+    background-color: #C4C4C4;
+    width: 130px;
+    height: 130px;
+}
+  
+.line {
+    margin-right: 29px;
+    margin-left: var(--margin-horizontal);
+    margin-top: 8px;
+    margin-bottom: 12px;
+    border: 1px solid var(--text-color);
+}
+  
+.grid {
+    justify-items: center;
+    row-gap: 32px;
+    column-gap: 32px;
+    display: grid;
+}
+  
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: 320px 320px;
+    }
+}
